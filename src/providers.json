@@ -1,0 +1,14 @@
+{
+    "sun": {
+        "name": "Cornell Daily Sun",
+        "feed_url": "https://cornellsun.com/feed/",
+        "base_url": "https://cornellsun.com",
+        "description": "A Cornell newspaper"
+    },
+    "reddit_cornell": {
+        "name": "Cornell Reddit",
+        "feed_url": "https://www.reddit.com/r/Cornell/.rss",
+        "base_url": "https://www.reddit.com/r/Cornell/",
+        "description": "The Cornell Reddit"
+    }
+}

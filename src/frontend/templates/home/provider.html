@@ -1,0 +1,52 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+{% for name, content in feed.items %}
+<h1 class="h1">{{ name }}</h1>
+<p class="lead mb-4">{{ description }}</p>
+<div class="row">
+    <div class="col-12 mb-4">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-flush">
+                            <thead class="thead-light">
+                            <tr>
+                                <th class="border-bottom" scope="col">Title</th>
+                                <th class="border-bottom" scope="col">Link</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for c in content %}
+                            <tr>
+                                <th class="text-gray-600" scope="row">
+                                    {{ c.title }}
+                                </th>
+                                <td class="fw-bolder text-gray-500">
+                                    <div class="">
+                                        <a href="{{ c.url }}" target="popup"  onclick="window.open('{{ c.url }}','popup','width=600,height=600'); return false;" class="btn btn-sm btn-secondary">Read</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

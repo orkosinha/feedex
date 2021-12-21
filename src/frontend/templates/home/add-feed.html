@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Forms {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<h1 class="h1">Add Feed</h1>
+<p class="lead mb-4">Add a new feed to track</p>
+
+<div class="row">
+    <div class="col-12 mb-4">
+        <div class="card border-0 shadow components-section">
+              <div class="card-body">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <table>
+                    {{ form.as_table }}
+                    </table>
+                    <input type="submit" class="btn btn-sm btn-secondary" value="Submit">
+                  </form>
+                
+              </div>
+          </div>
+      </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
