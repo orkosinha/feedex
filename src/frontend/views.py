@@ -45,6 +45,7 @@ def pages(request):
                     provider = Provider(
                         slug=form.cleaned_data["slug"],
                         name=form.cleaned_data["name"],
+                        provider_type="rss",
                         feed_url=form.cleaned_data["feed_url"],
                         base_url=form.cleaned_data["base_url"],
                         icon=get_favicon(form.cleaned_data["base_url"]),

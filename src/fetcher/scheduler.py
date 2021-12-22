@@ -21,6 +21,7 @@ def start():
                 provider = Provider(
                     slug=p,
                     name=providers[p]["name"],
+                    provider_type=providers[p]["type"],
                     feed_url=providers[p]["feed_url"],
                     base_url=providers[p]["base_url"],
                     icon=get_favicon(providers[p]["base_url"]),
@@ -32,7 +33,6 @@ def start():
     if STATES_PATH.exists():
         shutil.rmtree(STATES_PATH)
     STATES_PATH.mkdir()
-        
 
     fetch_and_store()
     scheduler = BackgroundScheduler(timezone="US/Eastern")
