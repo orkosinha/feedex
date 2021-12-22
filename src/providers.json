@@ -4,20 +4,20 @@
         "type": "rss",
         "feed_url": "https://cornellsun.com/feed/",
         "base_url": "https://cornellsun.com",
-        "description": "A Cornell newspaper",
+        "description": "A Cornell newspaper"
     },
     "reddit_cornell": {
         "name": "Cornell Reddit",
         "type": "rss",
         "feed_url": "https://www.reddit.com/r/Cornell/.rss",
         "base_url": "https://www.reddit.com/r/Cornell/",
-        "description": "The Cornell Reddit",
+        "description": "The Cornell Reddit"
     },
     "guacmag": {
         "name": "Guac Magazine",
         "type": "issuu",
         "base_url": "https://issuu.com/guacmag",
         "feed_url": "",
-        "description": "A Cornell magazine",
-    },
+        "description": "A Cornell magazine"
+    }
 }

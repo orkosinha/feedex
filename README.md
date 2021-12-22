@@ -2,7 +2,17 @@
 
 ## Installation
 
-To run this program, first create and activate a virtual enviroment within the `src/` folder
+To run this program, first compile CSS files with gulp.
+
+These are located in `src/frontend/static/assets/`
+
+Run the following commands once at the directory
+```
+$ npm install
+$ gulp
+```
+
+Then create and activate a virtual enviroment within the `src/` folder
 
 ```
 $ python3 -m pip install virtualenv venv

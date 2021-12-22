@@ -30,7 +30,6 @@ def fetch_and_store():
 
 
 def fetch(provider, ignore_predicates=False):
-    print(provider.provider_type)
     if provider.provider_type == "rss":
         return fetch_rss(provider, ignore_predicates)
     elif provider.provider_type == "issuu":
